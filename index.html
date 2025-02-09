@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="vSEq8HCrHnrRdHP7dx-DyEWLchX7t3mRu5WidtzewPc" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to The Research Scientist Pod</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Scientist Pod</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Welcome to The Research Scientist Pod</h1>
-    <p>This is the official GitHub Pages site for our organization.</p>
+<header>
+    <div class="header-inner">
+        <h1>Research Scientist Pod</h1>
+        <p>Innovative Research, Open-Source Development, and Cutting-Edge Technology</p>
+    </div>
+</header>
+
+<main>
+    <!-- About Section -->
+    <section class="content" id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to the Research Scientist Pod – a collaborative initiative dedicated to open-source research, algorithmic advancements, and the development of robust data science tools. Our mission is to drive innovation through code, research, and shared knowledge.
+        </p>
+    </section>
+
+
+
+    <!-- Featured Open-Source Projects Section -->
+    <section class="content" id="projects">
+        <h2>Featured Open-Source Projects</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/The-Research-Scientist-Pod/sorting-visualizer" target="_blank">Sorting Visualizer</a>
+                – A dynamic tool for visualizing various sorting algorithms.
+            </li>
+
+            <li>
+                <a href="https://github.com/The-Research-Scientist-Pod/options-pricing-calculator" target="_blank">Options Pricing Calculator</a>
+                – A modern C++ library and GUI application for pricing financial options using various methodologies including Black-Scholes, Monte Carlo simulation, and binomial tree models.
+
+
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- Call to Action (CTA) Section -->
+    <section class="content" id="cta">
+        <h2>Stay Connected</h2>
+        <p>
+            Follow my work on GitHub and stay updated with the latest in research and development.
+        </p>
+        <div class="cta-buttons">
+            <a href="https://github.com/The-Research-Scientist-Pod" class="button" target="_blank">Follow on GitHub</a>
+            <a href="https://researchdatapod.com" class="button" target="_blank">Visit Main Website</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Research Scientist Pod. All rights reserved.</p>
+</footer>
+
+<!-- Optional JavaScript to fetch blog posts (uncomment and adjust if needed)
+<script>
+  async function fetchBlogPosts() {
+    try {
+      const response = await fetch('https://researchdatapod.com/feed');
+      const data = await response.text();
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(data, "text/xml");
+      const items = xml.querySelectorAll("item");
+      let html = "";
+      for (let i = 0; i < Math.min(3, items.length); i++) {
+        let title = items[i].querySelector("title").textContent;
+        let link = items[i].querySelector("link").textContent;
+        html += `<li><a href="${link}" target="_blank">${title}</a></li>`;
+      }
+      document.getElementById("blog-posts").innerHTML = html;
+    } catch (error) {
+      console.error("Error fetching blog posts:", error);
+    }
+  }
+  // fetchBlogPosts();
+</script>
+-->
 </body>
 </html>
-
